@@ -8,13 +8,13 @@ public class test2 {
         if( time <= 6 ){
             System.out.println("Доброй ночи!");
         }
-        if( time <= 15 ){
+        if( time <= 15 && time > 6){
             System.out.println("Доброй день!");
         }
-        if( time <= 21 ){
+        if( time <= 21 && time > 15){
             System.out.println("Доброй вечер!");
         }
-        if( time <= 24 ){
+        if( time <= 24 && time > 21){
             System.out.println("Доброй ночи!");
         }
     }
