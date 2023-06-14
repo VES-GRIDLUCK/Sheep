@@ -4,21 +4,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Шашлычная");
 
-        int[] day;
-        day = new int[30];
+        int[] day = new int[30];
 
-        for (int d = 1; d <= day.length; d++) {
+        for (int d = 1; d <= day.length+1; d++) {
             System.out.println("День " + d);
 
-            int[] weight;
-            weight = new int[31];
+            int[] weight = new int[31];
 
-            int[] wool;
-            wool = new int[2];
+            int[] wool = new int[2];
 
             System.out.println("п/н " + "Мясо " + "Шерсть");
 
-            for (int i = 1; i <= weight.length; i++) {
+            for (int i = 1; i < weight.length; i++) {
                 weight[i] = ((int) (Math.random() * 30) + 50);
 
                 if (i < 10) {
